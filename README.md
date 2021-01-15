@@ -31,7 +31,7 @@ python mcmc_newll.py
 ```
 You can also try ``` python mcmc_newll.py ``` if you set all options to default.
 
-The output would be the joint cluster whole genome profiles
+The output would be the whole genome unnormalized cluster centers profiles (means_scs_ploidy.csv) and the corresponding cluster frequencies (weights_scs_ploidy.csv), along with the trained model saved in a pickle file.
 
 ## Phylogenetic Reconstruction
 
