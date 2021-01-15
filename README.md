@@ -38,8 +38,8 @@ The output would be the whole genome unnormalized cluster centers profiles (mean
 We used a heuristic method which combines the tree reconstruction method FISHTrees and a tree summary method ASTRAL to reconstruct the phylogenetic tree from the joint clusters.
 
 ### Requirements
-* FISHTrees[2,3] (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
-* ASTRAL[4] (https://github.com/smirarab/ASTRAL/)
+* FISHTrees [2,3] (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
+* ASTRAL [4] (https://github.com/smirarab/ASTRAL/)
 
 ```
 python run_fishtree_mcmc.py 
@@ -77,6 +77,9 @@ You can also try ``` python mcmc_newll.py ``` if you set all options to default.
 
 ## Reference
 [1] X. Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
+
 [2] S. A. Chowdhury, S. E. Shackney, K. Heselmeyer-Haddad, T. Ried, A. A. Sch ̈affer, and R. Schwartz. Phylogeneticanalysis of multiprobe fluorescence in situ hybridization data from tumor cell populations.  InBioinformatics,volume 29, 2013.
+
 [3] E. M. Gertz, S. A. Chowdhury, W.-J. Lee, D. Wangsa, K. Heselmeyer-Haddad, T. Ried, R. Schwartz, and A. A.Sch ̈affer.  FISHtrees 3.0: Tumor Phylogenetics Using a Ploidy Probe.PLOS ONE, 11(6):e0158569, 6 2016.
+
 [4] C. Zhang, M. Rabiee, E. Sayyari, and S. Mirarab. ASTRAL-III: Polynomial time species tree reconstruction from partially resolved gene trees.BMC Bioinformatics,2018.
