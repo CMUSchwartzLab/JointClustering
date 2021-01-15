@@ -38,7 +38,7 @@ The output would be the joint cluster whole genome profiles
 We used a heuristic method which combines the tree reconstruction method FISHTrees and a tree summary method ASTRAL to reconstruct the phylogenetic tree from the joint clusters.
 
 ### Requirements
-* FISHTree (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
+* FISHTrees (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
 * ASTRAL (https://github.com/smirarab/ASTRAL/)
 
 ```
