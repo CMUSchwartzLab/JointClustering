@@ -1,5 +1,5 @@
 # JointClustering
-This repository aims to generate joint clusters for single cell sequencing copy number data and single cell miFISH data(multiplex Fluorescence in situ hybridization). The code is based on python3.7.
+This repository aims to generate joint clusters for single cell sequencing copy number data and single cell miFISH data (multiplex interphase fluorescence in situ hybridization). The code is based on python3.7.
 
 ## Pre-clustering
 The method breaks into two steps. First separate clustering needs to be conducted for both types of data. The input includes the csv files for both datasets (-scs and -fish) and the cluster numbers for both datasets(-k_scs and -k_fish). The following code is an example for pre-clustering. You can also change the method for clustering. The default method for both datasets are Kmeans but Gaussian mixture model is also an option.
