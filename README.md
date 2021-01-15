@@ -74,3 +74,6 @@ python simulation_data.py
     -m_fish / --num_fish ${total number of scFISH cells, default is 450}
 ```
 You can also try ``` python mcmc_newll.py ``` if you set all options to default.
+
+## Reference
+Fu et al. Joint clustering of single cell sequencing and fluorescencein situhybridization data to infer tumor copy number phylogenies (in preparation)
