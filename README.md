@@ -76,4 +76,4 @@ python simulation_data.py
 You can also try ``` python mcmc_newll.py ``` if you set all options to default.
 
 ## Reference
-Fu et al. Joint clustering of single cell sequencing and fluorescencein situhybridization data to infer tumor copy number phylogenies (in preparation)
+Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
