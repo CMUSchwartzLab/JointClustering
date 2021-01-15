@@ -46,7 +46,7 @@ python run_fishtree_mcmc.py
     -d / --depth ${Sequencing depth for phylogenetic reconstruction}
     -p / --num_probe ${Number of probes per subset for each run of FISHTree, maximum=10 for FISHTree software}
     -cpu / --cpu_parellel ${number of cpu for running FISHTRee in parallel}
-    -chromo_info / --chromo_info ${A csv file with chromosome info of each feature}
+    -chromo_info / --chromo_info ${A csv file with chromosome info of each feature, default is chromo_list.csv}
     -o / --output_folder ${output folder}
     -m_scs / --num_scs ${total number of scSeq cells}
     -m_fish / --num_fish ${total number of scFISH cells}
