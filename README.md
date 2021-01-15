@@ -1,5 +1,5 @@
 # JointClustering
-This repository aims to generate joint clusters for single cell sequencing copy number data and single cell miFISH data (multiplex interphase fluorescence in situ hybridization). The code is based on python3.7.
+This repository aims to generate joint clusters for single cell sequencing copy number data and single cell miFISH data (multiplex interphase fluorescence in situ hybridization). The code is based on python3.7. The method is introduced in [1].
 
 ## Pre-clustering
 The method breaks into two steps. First separate clustering needs to be conducted for both types of data. The input includes the csv files for both datasets (-scs and -fish) and the cluster numbers for both datasets(-k_scs and -k_fish). The following code is an example for pre-clustering. You can also change the method for clustering. The default method for both datasets are Kmeans but Gaussian mixture model is also an option.
@@ -38,8 +38,8 @@ The output would be the whole genome unnormalized cluster centers profiles (mean
 We used a heuristic method which combines the tree reconstruction method FISHTrees and a tree summary method ASTRAL to reconstruct the phylogenetic tree from the joint clusters.
 
 ### Requirements
-* FISHTrees (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
-* ASTRAL (https://github.com/smirarab/ASTRAL/)
+* FISHTrees[2,3] (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
+* ASTRAL[4] (https://github.com/smirarab/ASTRAL/)
 
 ```
 python run_fishtree_mcmc.py 
@@ -76,4 +76,7 @@ python simulation_data.py
 You can also try ``` python mcmc_newll.py ``` if you set all options to default.
 
 ## Reference
-Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
+[1] X. Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
+[2] S. A. Chowdhury, S. E. Shackney, K. Heselmeyer-Haddad, T. Ried, A. A. Sch ̈affer, and R. Schwartz. Phylogeneticanalysis of multiprobe fluorescence in situ hybridization data from tumor cell populations.  InBioinformatics,volume 29, 2013.
+[3] E. M. Gertz, S. A. Chowdhury, W.-J. Lee, D. Wangsa, K. Heselmeyer-Haddad, T. Ried, R. Schwartz, and A. A.Sch ̈affer.  FISHtrees 3.0: Tumor Phylogenetics Using a Ploidy Probe.PLOS ONE, 11(6):e0158569, 6 2016.
+[4] C. Zhang, M. Rabiee, E. Sayyari, and S. Mirarab. ASTRAL-III: Polynomial time species tree reconstruction from partially resolved gene trees.BMC Bioinformatics,2018.
