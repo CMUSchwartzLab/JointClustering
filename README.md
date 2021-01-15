@@ -5,7 +5,7 @@ This repository aims to generate joint clusters for single cell sequencing copy 
 The method breaks into two steps. First separate clustering needs to be conducted for both types of data. The input includes the csv files for both datasets (-scs and -fish) and the cluster numbers for both datasets(-k_scs and -k_fish). The following code is an example for pre-clustering. You can also change the method for clustering. The default method for both datasets are Kmeans but Gaussian mixture model is also an option.
 ```
 python clustering.py 
-        -scs ${csv of scSeq} -fish ${csv of scFISH} 
+        -scs ${csv of scSeq data} -fish ${csv of scFISH data} 
         -k_scs ${number of clusters for scSeq} -k_fish ${number of clusters for scFISH} 
         -method_scs ${clustering method for scSeq} -method_fish ${clustering method for scFISH} 
 ```
