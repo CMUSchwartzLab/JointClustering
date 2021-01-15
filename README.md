@@ -41,6 +41,7 @@ We used a heuristic method which combines the tree reconstruction method FISHTre
 * FISHTrees [2,3] (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
 * ASTRAL [4] (https://github.com/smirarab/ASTRAL/)
 
+The main inputs are the two files generated from MCMC sampling step: means_scs_ploidy.csv and weights_scs_ploidy.csv, along with several other settings for the program.
 ```
 python run_fishtree_mcmc.py 
     -d / --depth ${Sequencing depth for phylogenetic reconstruction}
@@ -55,7 +56,7 @@ python run_fishtree_mcmc.py
 ```
 
 ## Simulation
-We also provide codes for simulation of both types of data.
+We also provide codes for simulation of both types of data. You can customize several parameters such as the level of perturbation of single cells from the ground truth cluster centers, the ground truth cluster number, the mutation rate etc.
 ```
 python simulation_data.py
     -perturb_scs / --perturb_scs ${Perturbation rate of scSeq from the cluster centers when method is int, default=0.05}
