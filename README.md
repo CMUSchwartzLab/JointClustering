@@ -77,7 +77,7 @@ python simulation_data.py
 You can also try ``` python mcmc_newll.py ``` if you set all options to default. A csv file with scSeq data (scs_simu.csv) and a csv file with miFISH data (fish_simu.csv) will be generated.
 
 ## Reference
-[1] X. Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
+[1] X. Fu et al. Joint clustering of single cell sequencing and fluorescence in situ hybridization data to infer tumor copy number phylogenies (in preparation)
 
 [2] S. A. Chowdhury, S. E. Shackney, K. Heselmeyer-Haddad, T. Ried, A. A. Sch ̈affer, and R. Schwartz. Phylogeneticanalysis of multiprobe fluorescence in situ hybridization data from tumor cell populations. In Bioinformatics,volume 29, 2013.
 
