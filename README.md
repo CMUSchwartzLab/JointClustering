@@ -74,7 +74,7 @@ python simulation_data.py
     -m_scs / --num_scs ${total number of scSeq cells, default is 200}
     -m_fish / --num_fish ${total number of scFISH cells, default is 450}
 ```
-You can also try ``` python mcmc_newll.py ``` if you set all options to default.
+You can also try ``` python mcmc_newll.py ``` if you set all options to default. A csv file with scSeq data (scs_simu.csv) and a csv file with miFISH data (fish_simu.csv) will be generated.
 
 ## Reference
 [1] X. Fu et al. Joint clustering of single cell sequencing and fluorescencein situ hybridization data to infer tumor copy number phylogenies (in preparation)
