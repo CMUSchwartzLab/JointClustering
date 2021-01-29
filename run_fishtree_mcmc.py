@@ -42,7 +42,7 @@ def internal2leaf(parent_child_table, outfile=None, root=0):
     #root = 0
     for i in pct[:,0]:
         if isinstance(i, tuple):
-            if 0 in i:
+            if root in i:
                 root = i
 
     node_stack = deque([root])
@@ -147,12 +147,12 @@ def internal2leaf(parent_child_table, outfile=None, root=0):
     for parent, children in output_dict.items():
         for child in children:
             parent_child_table_phy.append((parent, child, parent_child_dict_nwk[(parent, child)]))
-    if len(parent_child_table_phy) >= 6:
+    #if len(parent_child_table_phy) >= 6:
         #print("pcphy", parent_child_table_phy)
-        phylo_tree_nwk = Tree.from_parent_child_table(parent_child_table_phy)
-        if outfile is not None:
-            phylo_tree_nwk.write(format=9, outfile=outfile)
-        print(phylo_tree_nwk.write(format=9))
+    phylo_tree_nwk = Tree.from_parent_child_table(parent_child_table_phy)
+    if outfile is not None:
+        phylo_tree_nwk.write(format=9, outfile=outfile)
+    print(phylo_tree_nwk.write(format=9))
     return phylo_tree_nwk.write()
 
 
