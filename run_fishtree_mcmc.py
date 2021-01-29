@@ -20,13 +20,14 @@ import time
 import argparse
 import sys
 
-def internal2leaf(parent_child_table, outfile=None):
+def internal2leaf(parent_child_table, outfile=None, root=0):
     """
     Transform the tumor evolutionary tree (with intermediate nodes) to phylogenetic tree (all leaf nodes)
 
     :param parent_child_table: the parent child table list of the result of FISHTree
      where each item is [parent node, child node, branch length]
     :param outfile: the filename for saving, the newick format of phylogenetic tree will be saved with name outfile
+    :param root: the root node index, default is 0
     :return: the string of the phylogenetic tree
     """
     parent_child_dict_nwk = {}
@@ -38,7 +39,7 @@ def internal2leaf(parent_child_table, outfile=None):
     extra_node = extra_node_start
     pct = np.array(parent_child_table)
 
-    root = 0
+    #root = 0
     for i in pct[:,0]:
         if isinstance(i, tuple):
             if 0 in i:
