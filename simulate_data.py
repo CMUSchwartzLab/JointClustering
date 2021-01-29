@@ -197,15 +197,15 @@ def simulate(perturb_scs, perturb_fish, sc_07_npmatrix, probe_idx, chromo_list, 
             n = 9934
         if chromo_list is None:
             chromo_list_index = [0, 791, 1649, 2359, 3037, 3674, 4282, 4820, 5336, 5730, 6193, 6660, 7127, 7478,
-                           7793, 8073, 8336, 8599, 8872, 9045, 9259, 9382, 9495, 9900, 9934]
+                           7793, 8073, 8336, 8599, 8872, 9045, 9259, 9382, 9495, 9900, 9934] # obtained from real GBM data
             chromo_list = []
             for chromo in range(1, 25):
                 for i in range(chromo_list_index[chromo-1], chromo_list_index[chromo]):
                     chromo_list.append(chromo)
             chromo_list = np.array(chromo_list)
             np.savetxt("chromo_list.csv", chromo_list, delimiter=',')
-        rate = {2:1824000, 1:160300, 3:60500, 4:14500, 0:3200, 5:3000, 6:800, 7:60, 8:20, 9:5, 10:5}
-        p = np.loadtxt("loc_p.csv", delimiter='\t')
+        rate = {2: 1823873, 1: 160262, 3: 60571, 4: 14429, 0: 3164,5.0: 3045,6.0: 835,7.0: 62, 8: 21, 9: 5, 10: 5}  # calculated from real GBM data
+        p = np.loadtxt("loc_p.csv", delimiter='\t')              # calculated from real GBM data
 
     rate_p = np.zeros((11))
     for cn, freq in rate.items():
