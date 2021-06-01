@@ -33,28 +33,6 @@ You can also try ``` python mcmc_newll.py ``` if you set all options to default.
 
 The output would be the whole genome unnormalized cluster centers profiles (means_scs_ploidy.csv) and the corresponding cluster frequencies (weights_scs_ploidy.csv), along with the trained model saved in a pickle file.
 
-## Phylogenetic Reconstruction
-
-We used a heuristic method which combines the tree reconstruction method FISHTrees and a tree summary method ASTRAL to reconstruct the phylogenetic tree from the joint clusters.
-
-### Requirements
-* FISHTrees [2,3] (ftp://ftp.ncbi.nlm.nih.gov/pub/FISHtrees)
-* ASTRAL [4] (https://github.com/smirarab/ASTRAL/)
-
-The main inputs are the two files generated from MCMC sampling step: means_scs_ploidy.csv and weights_scs_ploidy.csv, along with several other settings for the program.
-```
-python run_fishtree_mcmc.py 
-    -d / --depth ${Sequencing depth for phylogenetic reconstruction}
-    -p / --num_probe ${Number of probes per subset for each run of FISHTree, maximum=10 for FISHTree software}
-    -cpu / --cpu_parellel ${number of cpu for running FISHTRee in parallel}
-    -chromo_info / --chromo_info ${A csv file with chromosome info of each feature, default is chromo_list.csv}
-    -o / --output_folder ${output folder}
-    -m_scs / --num_scs ${total number of scSeq cells}
-    -m_fish / --num_fish ${total number of scFISH cells}
-    -astral / --astral_directory ${The directory where ASTRAL is installed}
-    -fishtree / --fishtree_directory ${The directory where FISHTree is installed}
-```
-
 ## Simulation
 We also provide codes for simulation of both types of data. You can customize several parameters such as the level of perturbation of single cells from the ground truth cluster centers, the ground truth cluster number, the mutation rate etc.
 ```
@@ -74,7 +52,7 @@ python simulation_data.py
     -m_scs / --num_scs ${total number of scSeq cells, default is 200}
     -m_fish / --num_fish ${total number of scFISH cells, default is 450}
 ```
-You can also try ``` python mcmc_newll.py ``` if you set all options to default. A csv file with scSeq data (scs_simu.csv) and a csv file with miFISH data (fish_simu.csv) will be generated.
+You can also try ``` python simulation_data.py ``` if you set all options to default. A csv file with scSeq data (scs_simu.csv) and a csv file with miFISH data (fish_simu.csv) will be generated.
 
 ## Reference
 [1] X. Fu et al. Joint clustering of single cell sequencing and fluorescence in situ hybridization data to infer tumor copy number phylogenies (in preparation)
