@@ -55,4 +55,4 @@ python simulation_data.py
 You can also try ``` python simulation_data.py ``` if you set all options to default. A csv file with scSeq data (scs_simu.csv) and a csv file with miFISH data (fish_simu.csv) will be generated.
 
 ## Reference
-[1] X. Fu et al. Joint clustering of single cell sequencing and fluorescence in situ hybridization data to infer tumor copy number phylogenies (in preparation)
+[1] X. Fu et al. Joint clustering of single cell sequencing and fluorescence in situ hybridization data for reconstructing clonal heterogeneity in cancers (in preparation)
